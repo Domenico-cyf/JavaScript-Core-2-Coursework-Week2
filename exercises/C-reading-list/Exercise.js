@@ -176,9 +176,9 @@ Hint: https://untangled.io/in-depth-es6-destructuring-with-assembled-avengers
   const students = ['Christina', 'Jon', 'Alexandare'];
 
   // Write your code here
-  let [student1,[student2, student3],[student4, student5]] = students;
+  let [,,student1] = students;
 
-  console.log(students);
+  console.log(student1);
   console.log();
 }
 
@@ -199,8 +199,10 @@ Hint: https://untangled.io/in-depth-es6-destructuring-with-assembled-avengers
   ];
 
   // Write your code here
-  const [] = moreStudents;
+  const [student1, [student2, student3], [student4, student5]] = moreStudents;
 
   console.log(student1, student2, student3, student4, student5);
   console.log();
 }
+
+
